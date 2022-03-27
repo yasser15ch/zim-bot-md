@@ -1,0 +1,82 @@
+{
+  "users": {
+    "263716043248@s.whatsapp.net": {
+      "exp": 9,
+      "limit": 2000000000,
+      "lastclaim": 0,
+      "registered": false,
+      "name": "Takunda",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "level": 0,
+      "role": "Beginner",
+      "autolevelup": false
+    },
+    "263718175794@s.whatsapp.net": {
+      "exp": 8,
+      "limit": 2000000000,
+      "lastclaim": 0,
+      "registered": false,
+      "name": "Yuwiiiiiii",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "level": 0,
+      "role": "Beginner",
+      "autolevelup": false
+    },
+    "27693133100@s.whatsapp.net": {
+      "exp": 7,
+      "limit": 2000000000,
+      "lastclaim": 0,
+      "registered": false,
+      "name": "😊🌹lady dee 🌹😊",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "level": 0,
+      "role": "Beginner",
+      "autolevelup": false
+    },
+    "263787357437@s.whatsapp.net": {
+      "exp": 1,
+      "limit": 2000000000,
+      "lastclaim": 0,
+      "registered": false,
+      "name": "Momo",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "level": 0,
+      "role": "Beginner",
+      "autolevelup": false
+    }
+  },
+  "chats": {
+    "status@broadcast": {
+      "isBanned": false,
+      "welcome": false,
+      "detect": false,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": true,
+      "antiLink": true,
+      "simi": false,
+      "viewonce": true
+    }
+  },
+  "stats": {},
+  "msgs": {},
+  "sticker": {}
+}

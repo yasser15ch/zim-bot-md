@@ -4,9 +4,11 @@
 
 Don't forget to give it a star  🌟
 
+# [![WhatsApp Group](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/EFsb8RCXV4jLEFk4eAcA1A)
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/zim-bot/king-bot)
 
-## BUILDPACKS
+## 💙BUILDPACKS💙
 ```
 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 https://github.com/clhuang/heroku-buildpack-webp-binaries.git
@@ -14,7 +16,7 @@ https://github.com/DuckyTeam/heroku-buildpack-imagemagick
 heroku/nodejs
 ```
 
-## FOR TERMUX/UBUNTU/SSH USER
+## 🟡FOR TERMUX/UBUNTU/SSH USER🟡
 
 ```bash
 apt update && apt upgrade
@@ -28,7 +30,7 @@ npm install
 npm update
 ```
 
-## INSTALL ON TERMUX WITH UBUNTU
+## 🧱INSTALL ON TERMUX WITH UBUNTU🧱
 
 [ INSTALLING UBUNTU ]
 
@@ -51,7 +53,7 @@ apt install wget curl git ffmpeg imagemagick build-essential libcairo2-dev libpa
 
 ---------
 
-[ INSTALLING NODEJS & TOKIO-WABOT ]
+[ INSTALLING NODEJS & KING 👑 BOT ]
 
 ```bash
 ubuntu
@@ -65,7 +67,7 @@ npm update
 
 ---------
 
-## FOR WINDOWS/VPS/RDP USER
+## FOR WINDOWS/VPS/RDP USER😇
 
 * Download And Install Git [`Click Here`](https://git-scm.com/downloads)
 * Download And Install NodeJS [`Click Here`](https://nodejs.org/en/download)
@@ -86,7 +88,7 @@ Author / Creator | Editor
 
 Don't forget to give it a star 🌟
 
-Best regards: ZIM-BOTS
+Best regards: ZIM-BOTS🇿🇼
 
 
 

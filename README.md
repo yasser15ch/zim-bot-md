@@ -72,22 +72,7 @@ npm update
 * Download And Install FFmpeg [`Click Here`](https://ffmpeg.org/download.html) (**Don't Forget Add FFmpeg to PATH enviroment variables**)
 * Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
 
-```bash
-git clone https://github.com/itsajaygaur/tokio-wabot
-cd tokio-wabot
-npm install
-npm update
-```
 
----------
-
-## Run
-
-```bash
-node .
-```
-
----------
 
 
 

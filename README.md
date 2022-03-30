@@ -6,7 +6,7 @@ Don't forget to give it a star  🌟
 
 # [![WhatsApp Group](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/EFsb8RCXV4jLEFk4eAcA1A)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/zim-bot/king-bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ## 💙BUILDPACKS💙
 ```

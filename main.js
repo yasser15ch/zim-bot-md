@@ -1,5 +1,19 @@
 require('./config.js')
-const { WAConnection: _WAConnection } = require('@adiwajshing/baileys')
+const { 
+default: makeWASocket,
+BufferJSON, 
+initInMemoryKeyStore, 
+DisconnectReason, 
+AnyMessageContent, 
+delay, 
+useSingleFileAuthState , 
+generateForwardMessageContent, 
+prepareWAMessageMedia, 
+generateWAMessageFromContent, 
+generateMessageID, 
+proto,
+downloadContentFromMessage 
+} = require('@adiwajshing/baileys-md')
 const cloudDBAdapter = require('./lib/cloudDBAdapter')
 const { generate } = require('qrcode-terminal')
 const syntaxerror = require('syntax-error')

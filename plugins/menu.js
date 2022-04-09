@@ -45,6 +45,11 @@ const defaultMenu = {
   body: '┃ 🌍 %cmd %islimit %isPremium',
   footer: '╰━━━━━━━⦂\n',
   after: `
+%readmore`.trimStart(),
+  header: '╭━━━❰ %nsfw ❱',
+  body: '┃ 🔮 %cmd %islimit %isPremium',
+  footer: '╰━━━━━━━⦂\n',
+  after: `
 𝐙𝐈𝐌𝐁𝐎𝐓 𝐈𝐍𝐂 |©𝐃𝐑𝐈𝐏𝐒
 `,
 }

@@ -41,19 +41,12 @@ const defaultMenu = {
 ┃ ⭐ 𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘: %rtotalreg of %totalreg
 ┗━━━━━━━━━━━━━━━━⦂
 %readmore`.trimStart(),
-  header: '╭━━━❰ %main ❱',
-  body: '┃ 🌍 %cmd %islimit %isPremium',
-  footer: '╰━━━━━━━⦂\n',
-  after: `
-𝐙𝐈𝐌𝐁𝐎𝐓 𝐈𝐍𝐂 |©𝐃𝐑𝐈𝐏𝐒 
-`
-`%readmore`.trimStart(),
-  header: '╭━━━❰ %nsfw ❱',
+  header: '╭━━━❰ %category ❱',
   body: '┃ 🔮 %cmd %islimit %isPremium',
   footer: '╰━━━━━━━⦂\n',
   after: `
-𝐙𝐈𝐌𝐁𝐎𝐓 𝐈𝐍𝐂 |©𝐃𝐑𝐈𝐏𝐒 
-`
+𝐙𝐈𝐌𝐁𝐎𝐓 𝐈𝐍𝐂 |©𝐃𝐑𝐈𝐏𝐒
+`,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {

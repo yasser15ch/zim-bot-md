@@ -41,12 +41,18 @@ const defaultMenu = {
 ┃ ⭐ 𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘: %rtotalreg of %totalreg
 ┗━━━━━━━━━━━━━━━━⦂
 %readmore`.trimStart(),
-  header: '╭━━━❰ %category ❱',
+  header: '╭━━━❰ %main ❱',
   body: '┃ 🌍 %cmd %islimit %isPremium',
   footer: '╰━━━━━━━⦂\n',
   after: `
 𝐙𝐈𝐌𝐁𝐎𝐓 𝐈𝐍𝐂 |©𝐃𝐑𝐈𝐏𝐒
-`,
+`
+%readmore`.trimStart(),
+  header: '╭━━━❰ %nsfw ❱',
+  body: '┃ 🔮 %cmd %islimit %isPremium',
+  footer: '╰━━━━━━━⦂\n',
+  after: `
+𝐙𝐈𝐌𝐁𝐎𝐓 𝐈𝐍𝐂 |©𝐃𝐑𝐈𝐏𝐒`,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
@@ -147,7 +153,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     const pp = await conn.profilePictureUrl(conn.user.jid, 'image').catch(_ => './src/avatar_contact.png')
-    conn.sendHydrated(m.chat, text.trim(), author, pp, 'bot still under dev', 'SUBSCRIBE', author, pp, 'https//github.com', 'OWNER', [
+    conn.sendHydrated(m.chat, text.trim(), author, pp, 'bot still under dev', 'SUBSCRIBE', owner[0][0], 'OWNER', [
       ['BOTGROUP', '/donasi'],
       ['SPEED', '/ping'],
       ['OWNER', '/owner']

@@ -9,13 +9,13 @@ const isY = /y(es)/gi.test(args[1])
 const limitedSize = (isPrems || isOwner ? 99 : 70) * 1024
 let isLimit = limitedSize < audio['128kbps'].fileSize
 if (!isY) await conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', `
-*📌Title:* ${title}
-*🗎 Filesize:* ${audio['128kbps'].fileSizeH}
+*🔮𝗧𝗜𝗧𝗟𝗘:* ${title}
+*🔮𝗙𝗜𝗟𝗘𝗦𝗜𝗭𝗘 :* ${audio['128kbps'].fileSizeH}
 *${isLimit ? 'Use ' : ''}Link:* ${link}
 `.trim(), m)
 if (!isLimit) await conn.sendFile(m.chat, link, title + '.mp3', `
-*📌Title:* ${title}
-*🗎 Filesize:* ${audio['128kbps'].fileSizeH}
+*🔮𝗧𝗜𝗧𝗟𝗘:* ${title}
+*🔮𝗙𝗜𝗟𝗘𝗦𝗜𝗭𝗘:* ${audio['128kbps'].fileSizeH}
 `.trim(), m, null, {
 asDocument: 1
 })

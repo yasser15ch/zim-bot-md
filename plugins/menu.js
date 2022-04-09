@@ -41,7 +41,7 @@ const defaultMenu = {
 ┃ ⭐ 𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘: %rtotalreg of %totalreg
 ┗━━━━━━━━━━━━━━━━⦂
 %readmore`.trimStart(),
-  header: '╭━━━❰ %category ❱',
+  header: '╭━━━❰ %main ❱',
   body: '┃ 🌍 %cmd %islimit %isPremium',
   footer: '╰━━━━━━━⦂\n',
   after: `

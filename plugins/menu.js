@@ -147,8 +147,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     const pp = await conn.profilePictureUrl(conn.user.jid, 'image').catch(_ => './src/avatar_contact.png')
-    conn.sendHydrated(m.chat, text.trim(), author, pp, 'bot still under dev', 'SUBSCRIBE', owner[0][0], 'OWNER', 
-       'BOTGROUP', 'https://chat.whatsapp.com/EFsb8RCXV4jLEFk4eAcA1A', [
+    conn.sendHydrated(m.chat, text.trim(), author, pp, 'bot still under dev', 'SUBSCRIBE', author, pp, https://chat.whatsapp.com/EFsb8RCXV4jLEFk4eAcA1A, 'BOTGROUP', [
+      ['BOTGROUP', '/donasi,]
       ['SPEED', '/ping'],
       ['OWNER', '/owner']
     ], m, { asLocation: 1 })

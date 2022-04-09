@@ -2,51 +2,50 @@ import { promises } from 'fs'
 import { join } from 'path'
 import { xpRange } from '../lib/levelling.js'
 let tags = {
-  'main': 'Main',
-  'game': 'Game',
-  'rpg': 'RPG Games',
-  'xp': 'Exp & Limit',
-  'sticker': 'Sticker',
-  'kerang': 'Kerang Ajaib',
-  'quotes': 'Quotes',
-  'group': 'Group',
-  'premium': 'Premium',
-  'internet': 'Internet',
-  'anonymous': 'Anonymous Chat',
-  'nulis': 'MagerNulis & Logo',
-  'anime': 'Anime',
-  'nsfw': 'NSFW',
-  'downloader': 'Downloader',
-  'tools': 'Tools',
-  'fun': 'Fun',
-  'quran': 'Al Qur\'an',
-  'owner': 'Owner',
-  'advanced': 'Advanced',
-  'info': 'Info',
+  'main': '𝗭𝗜𝗠𝗕𝗢𝗧 𝗠𝗔𝗜𝗡',
+  'game': '𝗚𝗔𝗠𝗘',
+  'rpg': '𝗥𝗣𝗚 𝗚𝗔𝗠𝗘𝗦',
+  'xp': '𝗫𝗣 & 𝗟𝗜𝗠𝗜𝗧',
+  'sticker': '𝗦𝗧𝗜𝗖𝗞𝗘𝗥',
+  'kerang': '𝗞𝗘𝗥𝗔𝗡𝗚',
+  'quotes': '𝗤𝗢𝗨𝗧𝗘𝗦',
+  'group': '𝗚𝗥𝗢𝗨𝗣',
+  'internet': '𝗜𝗡𝗧𝗘𝗥𝗡𝗘𝗧',
+  'anonymous': '𝗔𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 𝗖𝗛𝗔𝗧',
+  'nulis': '𝗟𝗢𝗚𝗢 𝗠𝗔𝗞𝗘𝗥',
+  'anime': '𝗔𝗡𝗜𝗠𝗘',
+  'nsfw': '𝗡𝗦𝗙',
+  'downloader': '𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥',
+  'tools': '𝗧𝗢𝗢𝗟𝗦',
+  'fun': '𝗙𝗨𝗡',
+  'quran': '𝗔𝗜',
+  'owner': '𝗢𝗪𝗡𝗘𝗥',
+  'info': '𝗜𝗡𝗙𝗢',
 }
 const defaultMenu = {
   before: `
-╭─「 %me 🤖」
-│ 👋🏻 Hai, %name!
-│
-│ 🧱 Limit : *%limit Limit*
-│ 🦸🏼‍♂️ Role : *%role*
-│ 🔼 Level : *%level (%exp / %maxexp)*
-│ 💫 Total XP : %totalexp ✨
-│ 
-│ 📅 Tanggal: *%week, %date*
-│ 🕰️ Waktu: *%time*
-│
-│ 📈 Uptime: *%uptime (%muptime)*
-│ 📊 Database: %rtotalreg of %totalreg
-╰────
+╭─━━━❰ 𝗭𝗜𝗠 𝗕𝗢𝗧 𝗜𝗡𝗖 ❱
+┃ 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗭𝗜𝗠𝗕𝗢𝗧
+┖━━━━━━━━━━━━━━━⦂
+
+╭━━━━❰ 𝗨𝗦𝗘𝗥 ❱
+┃ 🎀 𝗟𝗜𝗠𝗜𝗧 : *%limit Limit*
+┃ 🎀 𝗥𝗢𝗟𝗘 : *%role*
+┃ 🎀 𝗟𝗘𝗩𝗘𝗟 : *%level (%exp / %maxexp)*
+┃ 🎀 𝗧𝗢𝗧𝗔𝗟 𝗫𝗣 : %totalexp ✨
+┃ 
+┃ 🌍 𝗗𝗔𝗧𝗘: %date*
+┃ 🌍 𝗧𝗜𝗠𝗘: *%time*
+┃
+┃ ⭐ 𝗨𝗣𝗧𝗜𝗠𝗘: *%uptime (%muptime)*
+┃ ⭐ 𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘: %rtotalreg of %totalreg
+┗━━━━━━━━━━━━━━━━⦂
 %readmore`.trimStart(),
-  header: '╭─「 %category 」',
-  body: '│ • %cmd %islimit %isPremium',
-  footer: '╰────\n',
+  header: '╭━━━❰ %category ❱',
+  body: '┃ 🌍 %cmd %islimit %isPremium',
+  footer: '╰━━━━━━━⦂\n',
   after: `
-*%npmname* | %version
-${'```%npmdesc```'}
+𝐙𝐈𝐌𝐁𝐎𝐓 𝐈𝐍𝐂 |©𝐃𝐑𝐈𝐏𝐒
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
@@ -62,12 +61,12 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     // Offset    0 is  0.00
     // Offset  420 is  7.00
     let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
-    let week = d.toLocaleDateString(locale, { weekday: 'long', timeZone: 'Asia/Jakarta' })
+    let week = d.toLocaleDateString(locale, { weekday: 'long', timeZone: 'Africa/Harare' })
     let date = d.toLocaleDateString(locale, {
       day: 'numeric',
       month: 'long',
       year: 'numeric',
-      timeZone: 'Asia/Jakarta'
+      timeZone: 'Africa/Harare'
     })
     let dateIslamic = Intl.DateTimeFormat(locale + '-TN-u-ca-islamic', {
       day: 'numeric',
@@ -78,7 +77,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       hour: 'numeric',
       minute: 'numeric',
       second: 'numeric',
-      timeZone: 'Asia/Jakarta'
+      timeZone: 'Africa/Harare'
     })
     let _uptime = process.uptime() * 1000
     let _muptime
@@ -148,13 +147,13 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     const pp = await conn.profilePictureUrl(conn.user.jid, 'image').catch(_ => './src/avatar_contact.png')
-    conn.sendHydrated(m.chat, text.trim(), author, pp, 'https://youtube.com/channel/UC7oYWqywu69EbM-1UfiiBYQ', 'YouTube', owner[0][0], 'Owner', [
-      ['Donate', '/donasi'],
-      ['Speed', '/ping'],
-      ['Owner', '/owner']
+    conn.sendHydrated(m.chat, text.trim(), author, pp, 'bot still under dev', 'SUBSCRIBE', owner[0][0], 'OWNER', [
+      ['BOTGROUP', 'https://chat.whatsapp.com/EFsb8RCXV4jLEFk4eAcA1A'],
+      ['SPEED', '/ping'],
+      ['OWNER', '/owner']
     ], m, { asLocation: 1 })
   } catch (e) {
-    conn.reply(m.chat, 'Maaf, menu sedang error', m)
+    conn.reply(m.chat, 'My friend, menu  error', m)
     throw e
   }
 }

@@ -1,4 +1,4 @@
-let limit = 80
+
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper';
 let handler = async (m, { conn, args, isPrems, isOwner }) => {
     if (!args || !args[0]) throw 'Wheres the url?'
@@ -23,7 +23,7 @@ asDocument: 1
 handler.help = ['mp3', 'a'].map(v => 'yt' + v + ` <ur`)
 handler.tags = ['downloader']
 handler.command = /^yt(a|mp3)$/i
-handler.limit = 1
+
 
 handler.exp = 0
 

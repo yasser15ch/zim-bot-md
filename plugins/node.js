@@ -1,4 +1,4 @@
-let fetch from ('node-fetch')
+import fetch from ('node-fetch')
 let handler = async (m, { conn, args }) => {
    response = args.join(' ')
   m.reply('Wait zim bot  processing...')

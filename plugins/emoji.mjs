@@ -1,6 +1,6 @@
-let fetch = require('node-fetch')
-let {fetchJson} = require("../lib/myfunc")
-let fs = require("fs")
+import { fetch } from ('node-fetch')
+import {fetchJson} from ("../lib/myfunc")
+import { fs } from ("fs")
 
 let handler = async (m, { conn, text, args }) => {
 if (!args[0]) throw 'Contoh penggunaan:\n\n*.emojimix 🐷&😣*'

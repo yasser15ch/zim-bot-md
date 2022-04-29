@@ -1,4 +1,4 @@
-import { sticker } from ('../lib/sticker')
+import { sticker } from '../lib/sticker'
 import { MessageType } from ('@adiwajshing/baileys')
 
 let handler = async (m, { conn, text }) => {

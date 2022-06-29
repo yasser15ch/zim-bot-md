@@ -1,5 +1,4 @@
-//Make & Help By
-//Johannes & Papah-Chan
+
 import jimp from 'jimp'
 import fs from 'fs'
 import fetch from 'node-fetch'
@@ -28,9 +27,9 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       day: 'numeric',
       month: 'long',
       year: 'numeric',
-      timeZone: 'Asia/Jakarta'
+      timeZone: 'Africa/Harare'
     })
-    let time = d.toLocaleTimeString(locale, { timeZone: 'Asia/Jakarta' })
+    let time = d.toLocaleTimeString(locale, { timeZone: 'Africa/Harare' })
     time = time.replace(/[.]/g, ':')
     let _uptime
     if (process.send) {
@@ -45,7 +44,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     let arr = txt.split('\n')
     let cita = arr[Math.floor(Math.random() * arr.length)]
     let thumb = await(await fetch(cita)).buffer()
-      let vn = './media/tante-tante.mp3'
+      let vn = './bot.mp3'
     let uptime = clockString(_uptime)
     let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(plugin => {
       return {
@@ -96,13 +95,13 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     // const pp = await conn.profilePictureUrl(conn.user.jid, 'image').catch(_ => './src/avatar_contact.png')
     // if (m.isGroup) return conn.sendButton(m.chat, text.trim(), conn.getName(conn.user.jid), pp, [['Speedtest', _p + 'ping'], ['Owner', _p + 'owner']], m)
-    //conn.sendHydrated(m.chat, text.trim(), conn.getName(conn.user.jid), await genProfile(conn, m), 'https://youtube.com/channel/UC0hs_I8N3JntK5vO6KogavQ', 'YouTube', null, null, [['Speedtest', _p + 'ping'], ['Owner', _p + 'owner']], m)
-   // conn.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/c82d5c358495e8ef15916.mp4' }, gifPlayback: true, gifAttribution: ~~(Math.random() * 2), caption: text.trim(), footer: await conn.getName(conn.user.jid) , templateButtons: [{ quickReplyButton: { displayText: 'Speedtest', id: `${_p}ping` }}, { quickReplyButton: { displayText: 'Owner', id: `${_p}owner` }} ] })
+    //conn.sendHydrated(m.chat, text.trim(), conn.getName(conn.user.jid), await genProfile(conn, m), 'https://www.youtube.com/c/DRIPSOFC', 'YouTube', null, null, [['Speedtest', _p + 'ping'], ['Owner', _p + 'owner']], m)
+   // conn.sendMessage(m.chat, { video: { url: 'https://i.imgur.com/LbmTdhf.mp4' }, gifPlayback: true, gifAttribution: ~~(Math.random() * 2), caption: text.trim(), footer: await conn.getName(conn.user.jid) , templateButtons: [{ quickReplyButton: { displayText: 'Speedtest', id: `${_p}ping` }}, { quickReplyButton: { displayText: 'Owner', id: `${_p}owner` }} ] })
    conn.sendButton(m.chat, `*${wish()}, ${name} 👋*`, text.trim(), await genProfile(conn, m), [['Speedtest', _p + 'ping'], ['Owner', _p + 'owner']], false, { quoted: fkon, contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "https://Instagram.com/bot_whangsaf",
+    mediaUrl: "https://github.com/zim-bot",
     mediaType: "VIDEO",
-    description: "https://Instagram.com/bot_whangsaf", 
-    title: 'Simple Bot Esm',
+    description: "https://github.com/zim-bot", 
+    title: 'ZIM BOT',
     body: wm,
     thumbnail: thumb,
     sourceUrl: sgc
@@ -114,7 +113,7 @@ ptt: true
 })
     // conn.sendButton(m.chat, 
     //`*Hi, ${name} 👋*\n\n`, 
-  //  text.trim(), './media/marin.jpg', [
+  //  text.trim(), './drips.jpg', [
 // [`Speedtest`, `${_p}ping`],
 // [`Owner`, `${_p}owner`]
 //], m, {asLocation: true})
@@ -143,7 +142,7 @@ function clockString(ms) {
 
 function wish() {
     let wishloc = ''
-  const time = moment.tz('Asia/Kolkata').format('HH')
+  const time = moment.tz('Africa/Harare').format('HH')
   wishloc = ('Hi')
   if (time >= 0) {
     wishloc = ('Night Rider')
@@ -164,10 +163,10 @@ function wish() {
 }
 
 async function genProfile(conn, m) {
-  let font = await jimp.loadFont('./names.fnt'),
-    mask = await jimp.read('https://i.imgur.com/552kzaW.png'),
+  let font = await jimp.loadFont('./src/BabyDoll.ttf'),
+    mask = await jimp.read('https://i.imgur.com/X2KRiCw.jpg'),
     welcome = await jimp.read(thumbnailUrl.getRandom()),
-    avatar = await jimp.read(await conn.profilePictureUrl(m.sender, 'image').catch(() => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')),
+    avatar = await jimp.read(await conn.profilePictureUrl(m.sender, 'image').catch(() => 'https://i.imgur.com/X2KRiCw.jpg')),
     status = (await conn.fetchStatus(m.sender).catch(console.log) || {}).status?.slice(0, 30) || 'Not Detected'
 
     await avatar.resize(460, 460)

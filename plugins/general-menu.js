@@ -163,7 +163,7 @@ function wish() {
 }
 
 async function genProfile(conn, m) {
-  let font = await jimp.loadFont('./src/BabyDoll.ttf'),
+  let font = await jimp.loadFont('./src/font/BabyDoll.ttf'),
     mask = await jimp.read('https://i.imgur.com/X2KRiCw.jpg'),
     welcome = await jimp.read(thumbnailUrl.getRandom()),
     avatar = await jimp.read(await conn.profilePictureUrl(m.sender, 'image').catch(() => 'https://i.imgur.com/X2KRiCw.jpg')),

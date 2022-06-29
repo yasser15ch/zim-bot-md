@@ -90,7 +90,7 @@ handler.all = async function (m) {
                "extendedTextMessage": {
                         "text":wm,
                         "title": wm,
-                        'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')
+                        'jpegThumbnail': fs.readFileSync('./drips.jpg')
                                }
                              } 
                             }
@@ -100,7 +100,7 @@ handler.all = async function (m) {
             { fromMe: false,
             participant: `0@s.whatsapp.net`, ...(m.chat  ? 
             { remoteJid: "status@broadcast" } : {}) },
-            message: { "liveLocationMessage": { "caption":"by : Papah-Chan","h": `${wm}`, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')}}
+            message: { "liveLocationMessage": { "caption":"by : Papah-Chan","h": `${wm}`, 'jpegThumbnail': fs.readFileSync('./drips.jpg')}}
            }
                
                   global.fliveLoc2 = {
@@ -108,7 +108,7 @@ handler.all = async function (m) {
             { fromMe: false,
             participant: `0@s.whatsapp.net`, ...(m.chat ? 
             { remoteJid: "status@broadcast" } : {}) },
-            message: { "liveLocationMessage": { "title": "Papah-Chan","h": wm, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')}}
+            message: { "liveLocationMessage": { "title": "Papah-Chan","h": wm, 'jpegThumbnail': fs.readFileSync('./drips.jpg')}}
            }
                
                    global.ftoko = {
@@ -121,7 +121,7 @@ handler.all = async function (m) {
                        "product": {
                            "productImage":{
                                "mimetype": "image/jpeg",
-                               "jpegThumbnail": fs.readFileSync('./thumbnail.jpg') //Gambarnye
+                               "jpegThumbnail": fs.readFileSync('./drips.jpg') //Gambarnye
                            },
                            "title": wm, //Kasih namalu 
                            "description": "Simple Bot Esm", 
@@ -142,7 +142,7 @@ handler.all = async function (m) {
               message: {
                            documentMessage: {
                            title: wm, 
-                           jpegThumbnail: fs.readFileSync('./thumbnail.jpg')
+                           jpegThumbnail: fs.readFileSync('./drips.jpg')
                                  }
                                }
                              }
@@ -159,7 +159,7 @@ handler.all = async function (m) {
                    "inviteCode": "null",
                    "groupName": "Kawan Papah-Chan", 
                    "caption": wm, 
-                   'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')
+                   'jpegThumbnail': fs.readFileSync('./drips.jpg')
                }
            }
        }
@@ -177,7 +177,7 @@ handler.all = async function (m) {
                         'seconds': '999999999', 
                         'gifPlayback': 'true', 
                         'caption': wm,
-                        'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')
+                        'jpegThumbnail': fs.readFileSync('./drips.jpg')
                                }
                               }
                              }

@@ -24,8 +24,8 @@ handler.all = async function (m) {
         
 		// Ini untuk command crator/owner
 		global.kontak2 = [
-         [owner[0], await this.getName(owner[0] + '@s.whatsapp.net'), 'ᴅᴇᴠᴇʟᴏᴩᴇʀ ʙᴏᴛ', 'mr.familia13@gmail.com', true],
-         [owner[1], await this.getName(owner[1] + '@s.whatsapp.net'), 'ᴅᴇᴠᴇʟᴏᴩᴇʀ ʙᴏᴛ', 'FokusDotId13@gmail.com', true], // Kalo mau di tambah tinggal copy 1baris ini di tempel di bawahnya trs di edit dikit!
+         [owner[0], await this.getName(owner[0] + '@s.whatsapp.net'), 'ᴅᴇᴠᴇʟᴏᴩᴇʀ ʙᴏᴛ', 'reinhardtuna@mail.uk', true],
+         [owner[1], await this.getName(owner[1] + '@s.whatsapp.net'), 'ᴅᴇᴠᴇʟᴏᴩᴇʀ ʙᴏᴛ', 'blessedtuna@mail.co.uk', true], // Kalo mau di tambah tinggal copy 1baris ini di tempel di bawahnya trs di edit dikit!
         ]
         
 		// ucapan ini mah
@@ -47,7 +47,7 @@ handler.all = async function (m) {
 					description: 'simple bot esm',
 					previewType: "PHOTO",
 					thumbnail: await (await fetch(pp)).buffer(),
-					sourceUrl: "https://github.com/FahriAdison",					
+					sourceUrl: "https://github.com/zim-bot",					
 				}
 			}
 		}
@@ -187,19 +187,19 @@ handler.all = async function (m) {
 export default handler 
 
 function ucapan() {
-    const time = moment.tz('Asia/Jakarta').format('HH')
-    let res = "Selamat malam 🌙"
+    const time = moment.tz('Africa/Harare').format('HH')
+    let res = "HI 🌙"
     if (time >= 4) {
-        res = "Selamat pagi 🌄"
+        res = "HI🌄"
     }
     if (time > 10) {
-        res = "Selamat siang ☀️"
+        res = "HI☀️"
     }
     if (time >= 15) {
-        res = "Selamat sore 🌅"
+        res = "HI 🌅"
     }
     if (time >= 18) {
-        res = "Selamat malam 🌙"
+        res = "HI 🌙"
     }
     return res
 }
